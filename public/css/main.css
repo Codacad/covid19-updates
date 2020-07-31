@@ -304,9 +304,16 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
 
 @media (max-width: 760px) {
   div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone div.alone-data div.head {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone-ata {
+    padding: .5em;
+    margin: 5px;
   }
 }
 

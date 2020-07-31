@@ -232,13 +232,19 @@ div#app-wrapper{
                                         }
                                         @media (max-width:760px){
                                             div.head{
-                                                font-size: 18px;
+                                                font-size: 16px;
                                                 font-weight: 500;
                                                 color: rgba(0,0,0,.7);
                                             }   
                                         }
                                     }
                                 }
+                                @media (max-width:760px){
+                                    div.alone-ata{
+                                        padding: .5em;
+                                        margin: 5px;
+                                    }   
+                                } 
                                 div.second{
                                     display: flex;                                    
                                     div.second-data{
