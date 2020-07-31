@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('#overall').forEach(overall => {
-        overall.style.display='block';
-    })
+    // document.querySelectorAll('#overall').forEach(overall => {
+    //     overall.style.display='block';
+    // })
 
     document.querySelectorAll('#country').forEach(function(country){
         function toggelData(id){

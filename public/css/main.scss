@@ -127,7 +127,7 @@ div#app-wrapper{
                             width: 100%;
                             height: 50px;
                             line-height: 50px;
-                            // background-color: rgba(0,0,0,.05);
+                            background-color: #f7f7f74b;
                             border-bottom: 1px solid rgba(0,0,0,.1);
                             div.buttons{
                                 display: flex;
@@ -166,7 +166,7 @@ div#app-wrapper{
                         }
                         div.main-info{  
                             padding:1em;                               
-                            transition: 200ms ease-in-out;                       
+                            transition: 200ms ease-in-out;                                                   
                             div.info{
                                 width: 100%;
                                 display: none;
@@ -221,10 +221,14 @@ div#app-wrapper{
                                     }                                 
                                 }
                             }
+                            div#overall{
+                                display: block;
+                            }
                         }
                     }
                 }                
                 div.right{
+                    display: block;
                     position: fixed;
                     left: auto;
                     overflow: auto; 
@@ -251,7 +255,28 @@ div#app-wrapper{
                     visibility: visible;
                     opacity: 1;                                        
                 }
+                // Right Media Queries 
+                @media (max-width:760px){
+                    div.right{
+                        display: none;
+                    }
+                }
             }         
+        }
+        // Covid19 Data Media Query
+        @media (max-width:760px){
+            div.covid19-data{
+                width: 100%;
+                height: 80vh;                        
+                display: block;                            
+            }
+        }        
+    }
+    // Container media Query
+    @media (max-width:760px){
+        div#container{        
+            position: relative;
+            width: 100%;            
         }
     }
 }
