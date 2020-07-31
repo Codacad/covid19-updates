@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+div#app-wrapper div#nav-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 55px;
+  z-index: 100;
+  line-height: 55px;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div#app-wrapper div#nav-wrapper nav#navbar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#app-wrapper div#nav-wrapper nav#navbar a.brand-logo {
+  width: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  margin-left: 30px;
+}
+
+div#app-wrapper div#nav-wrapper nav#navbar div.source-link {
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#app-wrapper div#nav-wrapper nav#navbar div.source-link a {
+  color: #fff;
+  margin-right: 30px;
+  width: 120px;
+  border-radius: 2px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 30px;
+  padding: .5em 1em;
+  background-color: cornflowerblue;
+  text-decoration: none;
+  font-size: 110%;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1), 0px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+div#app-wrapper div#nav-wrapper nav#navbar div.source-link a span:first-child {
+  margin-right: 10px;
+}
+
+div#app-wrapper div#container {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  top: 55px;
+  left: 0;
+  padding: 1em;
+}
+
+div#app-wrapper div#container div.covid19-data {
+  width: 100%;
+  height: 80vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 2fr;
+      grid-template-columns: 5fr 2fr;
+  grid-column-gap: 30px;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left {
+  position: relative;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header div.country-identity {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header div.country-identity div.flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header div.country-identity div.flag img {
+  display: block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header div.country-identity div.country-name {
+  margin-left: 20px;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.header div.population {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a {
+  height: 100%;
+  padding: 0px 1em;
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  text-align: center;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  position: relative;
+  font-weight: 600;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a.active {
+  color: cornflowerblue;
+  font-weight: 600;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: cornflowerblue;
+  left: 0;
+  bottom: 0;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info {
+  padding: 1em;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info {
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.first div.first-data {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.first div.first-data div.head {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone div.alone-data {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone div.alone-data div.head {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.second div.second-data {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.second div.second-data div.head {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.right {
+  position: fixed;
+  left: auto;
+  overflow: auto;
+  max-width: 350px;
+  height: 85%;
+  margin: auto;
+  padding: 0em 1em;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.right::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.right::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.right:hover.right::-webkit-scrollbar, div#app-wrapper div#container div.covid19-data div.data div.right:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */

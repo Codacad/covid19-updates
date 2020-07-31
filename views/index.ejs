@@ -1,0 +1,112 @@
+<title><%=title%></title>
+<% if (typeof allData != "undefined") { %>
+    <div class="covid19-data">
+        <div class="data">
+            <div class="left sub-data">
+                <% allData.forEach(data => { %>
+                    <div class="country information" id="country">                                    
+                        <div class="header">
+                            <div class="country-identity">
+                                <div class="flag"><img src="<%=data.countryInfo.flag%>"/></div>
+                                <h2 class="country-name"><%=data.country%></h2>
+                            </div>
+                            <div class="population">
+                                <div><h4><span class="badge bg-primary"><span class="mr-2">Population</span><%=(data.population/1000000).toFixed(2)%>M</span></h4></div>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <div class="buttons">
+                                <a href="#" class="active" data-covid19="overall">Overall Updates</a>
+                                <a href="#" data-covid19="today">Today's Updates</a>
+                                <a href="#" data-covid19="upm">Other Information</a>                             
+                            </div>
+                        </div>
+                        <div class="main-info">                           
+                            <div class="overall info" id="overall">
+                                <div class="first">
+                                    <div class="tests first-data">
+                                        <div class="head">Tests</div>
+                                        <div class="num"><h4><span class="badge bg-dark"><%=data.tests%></span></h4></div>
+                                    </div>
+                                    <div class="cases first-data">
+                                        <div class="head">Cases</div>
+                                        <div class="num"><h4><span class="badge bg-warning"><%= data.cases %></span></h4></div>
+                                    </div>
+                                    <div class="recovered first-data">
+                                        <div class="head">Recovered</div>
+                                        <div class="num"><h4><span class="badge bg-success"><%= data.recovered %></span></h4></div>                        
+                                    </div>               
+                                </div>
+                                <div class="second">
+                                    <div class="deaths second-data">
+                                        <div class="head">Deaths</div>
+                                        <div class="num"><h4><span class="badge bg-danger"><%= data.deaths %> </span></h4></div>                        
+                                    </div>              
+                                    <div class="active second-data">
+                                        <div class="head">Active</div>
+                                        <div class="num"><h4><span class="badge bg-warning"><%=data.active%></span></h4></div>                        
+                                    </div>                              
+                                    <div class="critical second-data">
+                                        <div class="head">Critical</div>
+                                        <div class="num"><h4><span class="badge bg-danger"><%=data.critical%></span></h4></div>                        
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="today info" id="today">                            
+                                <div class="alone">
+                                    <div class="cases alone-data">
+                                        <div class="head">Today's Cases</div>
+                                        <div class="num"><h4><span class="badge bg-warning"><%=data.todayCases%></span></h4></div>
+                                    </div>
+                                    <div class="recovered alone-data">
+                                        <div class="head">Today's Recovered</div>
+                                        <div class="num"><h4><span class="badge bg-success"><%=data.todayRecovered%></span></h4></div>                        
+                                    </div>               
+                                    <div class="deaths alone-data">
+                                        <div class="head">Today's Deaths</div>
+                                        <div class="num"><h4><span class="badge bg-danger"><%=data.todayDeaths%></span></h4></div>                        
+                                    </div>                                         
+                                </div>
+                            </div>
+                            <div class="upm info" id="upm">                            
+                                <div class="first">
+                                    <div class="tpm first-data">
+                                        <div class="head">Tests/Million</div>
+                                        <div class="num"><h4><span class="badge bg-dark"><%=data.testsPerOneMillion%></span></h4></div>
+                                    </div>
+                                    <div class="cpm first-data">
+                                        <div class="head">Cases/Million</div>
+                                        <div class="num"><h4><span class="badge bg-warning"><%=data.casesPerOneMillion%></span></h4></div>
+                                    </div>
+                                    <div class="rpm first-data">
+                                        <div class="head">Recovered/Million</div>
+                                        <div class="num"><h4><span class="badge bg-success"><%=data.recoveredPerOneMillion%></span></h4></div>                        
+                                    </div>               
+                                </div>
+                                <div class="second">
+                                    <div class="dpm second-data">
+                                        <div class="head">Deaths/Million</div>
+                                        <div class="num"><h4><span class="badge bg-danger"><%=data.deathsPerOneMillion%></span></h4></div>                        
+                                    </div>                                         
+                                    <div class="apm second-data">
+                                        <div class="head">Active/Million</div>
+                                        <div class="num"><h4><span class="badge bg-warning"><%=data.activePerOneMillion%></span></h4></div>                        
+                                    </div>                                         
+                                    <div class="crpm second-data">
+                                        <div class="head">Critical/Million</div>
+                                        <div class="num"><h4><span class="badge bg-danger"><%=data.criticalPerOneMillion%></span></h4></div>                        
+                                    </div>                                         
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                <% }) %>
+            </div>
+        </div>               
+        <div class="data">
+            <div class="right sub-data">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam architecto nulla illum officiis impedit, nihil, deserunt est beatae praesentium molestiae at dolorem optio earum. Ab sit quasi similique praesentium cupiditate, dolore nisi dicta consequuntur quibusdam iste porro ad facere odio nihil veniam omnis a saepe soluta facilis dignissimos accusantium sed tempora! Culpa facere cumque assumenda consequuntur a in provident nisi animi et illo itaque expedita quasi nobis voluptas, molestiae placeat eius atque distinctio nesciunt, error suscipit! Ad labore error magnam. Dicta ab ducimus minima. Libero, mollitia repellendus veniam debitis, eaque odit tempore iusto iure praesentium architecto pariatur quaerat error veritatis laboriosam optio sed reprehenderit consequatur aperiam unde, numquam eius est! Officia fuga suscipit magnam, sequi earum ea, libero error deserunt dolores voluptatum sunt ut mollitia eum? Eveniet nemo velit molestias omnis exercitationem ipsa corporis cumque aperiam praesentium magnam esse modi error saepe similique, corrupti quasi? Nulla tempore voluptates corrupti, hic debitis non dicta sapiente culpa, consequuntur in exercitationem perferendis necessitatibus deleniti molestias, ex numquam adipisci neque excepturi. Modi, consequuntur nulla? Mollitia sunt unde eveniet, culpa, saepe aut quae repellat enim voluptas odit deserunt exercitationem eum alias eaque neque, veniam totam facere. Animi fuga magnam, non doloribus asperiores modi rem assumenda!
+            </div>
+        </div>                
+    </div>
+<% } %>

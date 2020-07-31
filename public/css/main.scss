@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f7f7f7;
+}
+div#app-wrapper{
+    div#nav-wrapper{
+        position: fixed;
+        width: 100%;        
+        top: 0;
+        left: 0;
+        height: 55px;
+        z-index: 100;
+        line-height: 55px;
+        background-color:#f7f7f7;
+        box-shadow: 0px 0px 1px rgba(0,0,0,.3),
+                    0px 0px 1px rgba(0,0,0,.3),
+                    0px 2px 5px rgba(0,0,0,.1),
+                    0px 2px 5px rgba(0,0,0,.1);        
+        nav#navbar{
+            position: relative;  
+            display: flex;          
+            a.brand-logo{   
+                width: 100%;         
+                font-size: 1.5rem;                
+                text-decoration: none;                
+                font-weight: 600;
+                color: rgba(0,0,0,.7);
+                margin-left: 30px;                
+            }
+            div.source-link{
+                width: 100%;
+                height: 55px;
+                display:flex;
+                justify-content: flex-end;
+                align-items: center;                
+                a{
+                    color: #fff;
+                    margin-right: 30px;
+                    width: 120px;
+                    border-radius: 2px;
+                    height: 30px;                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;                    
+                    line-height: 30px;
+                    padding: .5em 1em;
+                    background-color: cornflowerblue;
+                    text-decoration: none;
+                    font-size: 110%;
+                    font-weight: 500;
+                    box-shadow: 0px 2px 3px rgba(0,0,0,.1),
+                                0px 2px 3px rgba(0,0,0,.1),
+                                0px 2px 3px rgba(0,0,0,.1),
+                                0px 2px 3px rgba(0,0,0,.1);
+                    span:first-child{
+                        margin-right: 10px;
+                    }                    
+                }
+            }
+        }
+    }
+    div#container{        
+        position: relative;
+        width: 95%;
+        margin: auto;
+        height: 100%;
+        top: 55px;
+        left: 0;
+        padding: 1em;
+        div.covid19-data{
+            width: 100%;
+            height: 80vh;                        
+            display: grid;            
+            grid-template-columns: 5fr 2fr;
+            grid-column-gap: 30px;   
+            div.data{
+                div.left{
+                    position: relative;
+                    div#country{
+                        background-color: #fff;                        
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        box-shadow: 0px 5px 5px rgba(0,0,0,.03),
+                                    0px 5px 5px rgba(0,0,0,.03),
+                                    0px 5px 5px rgba(0,0,0,.03);
+
+                        div.header{
+                            display: flex;
+                            align-items: center;
+                            padding: 1em;
+                            width: 100%;
+                            border-bottom: 1px solid rgba(0,0,0,.1);
+                            div.country-identity{
+                                width: 100%;
+                                display: flex;
+                                div.flag{
+                                    display: flex;
+                                    align-items: center;
+                                    img{
+                                        display: block;                                      
+                                        margin-right: 10px;                                        
+                                        width:40px;
+                                        height:40px;     
+                                        border-radius: 3px;                                   
+                                    }
+                                }
+                                div.country-name{
+                                    margin-left: 20px;
+                                }
+                            }
+                            div.population{
+                                display: flex;
+                                justify-content: flex-end;
+                                div{
+
+                                }
+                            }
+                        }
+                        div.tabs{
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            // background-color: rgba(0,0,0,.05);
+                            border-bottom: 1px solid rgba(0,0,0,.1);
+                            div.buttons{
+                                display: flex;
+                                width: 100%;
+                                height: 100%;                                    
+                                a{
+                                    height: 100%;                                        
+                                    padding: 0px 1em;
+                                    display: block;
+                                    text-decoration: none;
+                                    color: rgba(0,0,0,.7);
+                                    font-size: 18px;
+                                    text-align: center;
+                                    transition: 200ms ease-in-out;
+                                    position: relative;
+                                    font-weight: 600;
+                                }
+                                a:hover{
+                                    background-color: rgba(0,0,0,.03);
+                                }
+                                a.active{
+                                    color: cornflowerblue;
+                                    font-weight: 600;
+                                    transition: 300ms ease-in-out;
+                                }
+                                a.active::after{
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 3px;
+                                    background-color: cornflowerblue;
+                                    left: 0;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        div.main-info{  
+                            padding:1em;                               
+                            transition: 200ms ease-in-out;                       
+                            div.info{
+                                width: 100%;
+                                display: none;
+                                text-align: center;
+                                div.first{
+                                    display: flex;
+                                    width: 100%;
+                                    div.first-data{
+                                        width: 100%;
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        padding: 1em;
+                                        margin: 10px;
+                                        border-radius: 5px;
+                                        background-color: #f7f7f7;
+                                        div.head{
+                                            font-size: 24px;
+                                            font-weight: 500;
+                                            color: rgba(0,0,0,.7);
+                                        }
+                                    }                                                                                             
+                                }
+                                div.alone{
+                                    display: flex;                                
+                                    div.alone-data{
+                                        width: 100%;
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        padding: 1em;
+                                        margin: 10px;
+                                        border-radius: 5px;
+                                        background-color: #f7f7f7;
+                                        div.head{
+                                            font-size: 24px;
+                                            font-weight: 500;
+                                            color: rgba(0,0,0,.7);
+                                        }
+                                    }
+                                }
+                                div.second{
+                                    display: flex;                                    
+                                    div.second-data{
+                                        width: 100%;
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        padding: 1em;
+                                        margin: 10px;
+                                        border-radius: 5px;   
+                                        background-color: #f7f7f7; 
+                                        div.head{
+                                            font-size: 24px;
+                                            font-weight: 500;
+                                            color: rgba(0,0,0,.7);
+                                        }                                  
+                                    }                                 
+                                }
+                            }
+                        }
+                    }
+                }                
+                div.right{
+                    position: fixed;
+                    left: auto;
+                    overflow: auto; 
+                    max-width: 350px;
+                    height: 85%; 
+                    margin: auto;                                                           
+                    padding: 0em 1em;
+                }
+                div.right::-webkit-scrollbar{
+                    background-color: transparent;
+                    width: 10px; 
+                    border-radius: 5px;                   
+                    visibility: hidden;
+                    opacity: 0;                                        
+                }
+                div.right::-webkit-scrollbar-thumb{
+                    background-color: rgba(0,0,0,.2);
+                    width: 10px; 
+                    border-radius: 5px;                   
+                    visibility: hidden;
+                    opacity: 0;                                        
+                }
+                div.right:hover.right::-webkit-scrollbar, div.right:hover::-webkit-scrollbar-thumb{
+                    visibility: visible;
+                    opacity: 1;                                        
+                }
+            }         
+        }
+    }
+}
