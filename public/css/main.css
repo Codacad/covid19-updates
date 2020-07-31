@@ -39,7 +39,7 @@ div#app-wrapper div#nav-wrapper nav#navbar a.brand-logo {
   text-decoration: none;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.7);
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 @media (max-width: 760px) {
@@ -66,7 +66,7 @@ div#app-wrapper div#nav-wrapper nav#navbar div.source-link {
 
 div#app-wrapper div#nav-wrapper nav#navbar div.source-link a {
   color: #fff;
-  margin-right: 30px;
+  margin-right: 20px;
   width: 120px;
   border-radius: 2px;
   height: 30px;
@@ -413,6 +413,7 @@ div#app-wrapper div#container div.covid19-data div.data div.right:hover.right::-
   div#app-wrapper div#container {
     position: relative;
     width: 100%;
+    padding: .5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
