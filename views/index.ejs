@@ -1,8 +1,12 @@
 <title><%=title%></title>
 <% if (typeof allData != "undefined") { %>
     <div class="covid19-data">
+
         <div class="data">
             <div class="left sub-data">
+                <div class="search-group">
+                    <input type="text" placeholder="Search" id="search" class="search">                    
+                </div>
                 <% allData.forEach(data => { %>
                     <div class="country information" id="country">                                    
                         <div class="header">

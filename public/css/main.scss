@@ -90,6 +90,20 @@ div#app-wrapper{
             div.data{
                 div.left{
                     position: relative;
+                    div.search-group{
+                        width:100%;
+                        margin-bottom: 5px;                        
+                        input.search{
+                            width: 100%;
+                            display: block;
+                            border-radius: 5px;
+                            outline: none;
+                            border: 1px solid rgba(0,0,0,.08);                            
+                            padding: 10px 15px;      
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
                     div#country{
                         background-color: #fff;                        
                         border-radius: 5px;

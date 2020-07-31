@@ -117,6 +117,22 @@ div#app-wrapper div#container div.covid19-data div.data div.left {
   position: relative;
 }
 
+div#app-wrapper div#container div.covid19-data div.data div.left div.search-group {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left div.search-group input.search {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 div#app-wrapper div#container div.covid19-data div.data div.left div#country {
   background-color: #fff;
   border-radius: 5px;
