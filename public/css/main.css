@@ -204,6 +204,13 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
   font-weight: 600;
 }
 
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
 div#app-wrapper div#container div.covid19-data div.data div.left div#country div.tabs div.buttons a:hover {
   background-color: rgba(0, 0, 0, 0.03);
 }
