@@ -202,11 +202,18 @@ div#app-wrapper{
                                         // Media queries
                                         @media (max-width:760px){
                                             div.head{
-                                                font-size: 18px;
+                                                font-size: 16px;
                                                 font-weight: 500;
                                                 color: rgba(0,0,0,.7);
                                             }   
                                         }
+                                    }
+                                    // Media Query
+                                    @media (max-width:760px){
+                                        div.first-data{
+                                            padding: .5em;
+                                            margin: 5px;
+                                        }   
                                     }                                                                                             
                                 }
                                 div.alone{
@@ -253,13 +260,24 @@ div#app-wrapper{
                                                 color: rgba(0,0,0,.7);
                                             }   
                                         }                                
-                                    }                                 
+                                    }
+                                    @media (max-width:760px){
+                                        div.second-data{
+                                            padding: .5em;
+                                            padding: 5;
+                                        }   
+                                    }                                  
                                 }
                             }
                             div#overall{
                                 display: block;
                             }
                         }
+                        @media (max-width:760px){
+                            div.main-info{
+                                padding: .5em;
+                            }   
+                        } 
                     }
                 }                
                 div.right{
