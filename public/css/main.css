@@ -251,6 +251,14 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
   color: rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.first div.first-data div.head {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
 div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +280,14 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
   color: rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.alone div.alone-data div.head {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
 div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.second {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,6 +307,14 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
   font-size: 24px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div.info div.second div.second-data div.head {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+  }
 }
 
 div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info div#overall {
