@@ -18,7 +18,7 @@ div#app-wrapper{
         height: 55px;
         z-index: 100;
         line-height: 55px;
-        background-color:#028090;
+        background-color: #02c39a;
         box-shadow: 0px 0px 1px rgba(0,0,0,.3),
                     0px 0px 1px rgba(0,0,0,.3),
                     0px 2px 5px rgba(0,0,0,.1),
@@ -57,7 +57,7 @@ div#app-wrapper{
                     align-items: center;                    
                     line-height: 30px;
                     padding: .5em 1em;
-                    background-color: cornflowerblue;
+                    background-color: #ef476f;
                     text-decoration: none;
                     font-size: 110%;
                     font-weight: 500;
@@ -308,7 +308,8 @@ div#app-wrapper{
                     height: 85%; 
                     margin: auto;                                                           
                     padding: 1em;
-                    background-color:#d8f3dc;
+                    background-color:#fff;
+                    border-radius: 5px;
                 }
                 div.right::-webkit-scrollbar{
                     background-color: transparent;
