@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('input.search').addEventListener('focus', function(){
-        document.querySelector('div.search-group').style.boxShadow = "0px 0px 3px rgba(2, 195, 154,.5)"
+        document.querySelector('div.search-group').style.boxShadow = "0px 0px 3px 3px rgba(2, 195, 154,.4)"
     })
     document.querySelector('input.search').addEventListener('blur', function(){
         document.querySelector('div.search-group').style.boxShadow = "none"
