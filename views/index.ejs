@@ -11,7 +11,10 @@
                     <span><span><i class='fas fa-search'></i></span></span>
                 </div>
                 <% allData.forEach(data => { %>
-                    <div class="country information" id="country">                                    
+                    <div class="country information" id="country"> 
+                        <div class="pop-popup">
+                            <span>Population</span>
+                        </div>                                  
                         <div class="header">
                             <div class="country-identity">
                                 <div class="flag"><img src="<%=data.countryInfo.flag%>"/></div>
