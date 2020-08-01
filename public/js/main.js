@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const firstCountry = document.querySelector('#first-country');
         firstCountry.querySelector('div.pop-popup').classList.add('show-pop-popup');
         setTimeout(function(){
-            firstCountry.querySelector('div.pop-popup').classList.remove('show-pop-popup');
-            firstCountry.querySelector('div.pop-popup').style.display = "none"
+            firstCountry.querySelector('div.pop-popup').classList.remove('show-pop-popup');                        
         },10000)
     })
     window.onscroll = function(){
