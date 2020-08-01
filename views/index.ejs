@@ -1,11 +1,14 @@
 <title><%=title%></title>
 <% if (typeof allData != "undefined") { %>
     <div class="covid19-data">
-
         <div class="data">
             <div class="left sub-data">
+                <div class="go-to-bottom">
+                    <a href="#last-country"><span><i class="fas fa-arrow-down"></i></span></a>
+                </div>
                 <div class="search-group">                    
-                    <input type="text" placeholder="" id="search" class="search">                    
+                    <input type="text" placeholder="Search" id="search" class="search">                    
+                    <span><span><i class='fas fa-search'></i></span></span>
                 </div>
                 <% allData.forEach(data => { %>
                     <div class="country information" id="country">                                    
