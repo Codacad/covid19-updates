@@ -18,27 +18,26 @@ div#app-wrapper{
         height: 55px;
         z-index: 100;
         line-height: 55px;
-        background-color:#f7f7f7;
+        background-color:#028090;
         box-shadow: 0px 0px 1px rgba(0,0,0,.3),
                     0px 0px 1px rgba(0,0,0,.3),
                     0px 2px 5px rgba(0,0,0,.1),
                     0px 2px 5px rgba(0,0,0,.1);        
         nav#navbar{
             position: relative;  
-            display: flex;          
+            display: flex;                      
             a.brand-logo{   
                 width: 100%;         
                 font-size: 1.5rem;                
                 text-decoration: none;                
                 font-weight: 600;
-                color: rgba(0,0,0,.7);
+                color: #fff;
                 margin-left: 20px;                
             }
             @media (max-width:760px){
                 a.brand-logo{
                     font-size: 22px;
-                    font-weight: 500;
-                    color: rgba(0,0,0,.7);
+                    font-weight: 500;                    
                 }   
             }
             div.source-link{
@@ -96,12 +95,12 @@ div#app-wrapper{
                         input.search{
                             width: 100%;
                             display: block;
-                            border-radius: 5px;
+                            border-radius: 10px;
                             outline: none;
-                            border: 1px solid rgba(0,0,0,.08);                            
+                            border: 2px solid rgba(0,0,0,.05);                            
                             padding: 10px 15px;      
                             font-size: 16px;
-                            font-weight: 400;
+                            font-weight: 400;                            
                         }
                     }
                     div#country{
@@ -308,7 +307,8 @@ div#app-wrapper{
                     max-width: 350px;
                     height: 85%; 
                     margin: auto;                                                           
-                    padding: 0em 1em;
+                    padding: 1em;
+                    background-color:#d8f3dc;
                 }
                 div.right::-webkit-scrollbar{
                     background-color: transparent;
