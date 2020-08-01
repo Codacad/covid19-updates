@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('div.search-group').style.transition = "200ms ease-in-out"
     })
 
-    window.onscroll = function(){
-        const doc = document.documentElement.scrollHeight;
-        const winHeight = window.innerHeight;        
-        if(window.scrollY > winHeight+doc/2-winHeight){
-            document.querySelector('.go-to-bottom').classList.add('toggle-go-to-bottom');            
-        }else{
-            document.querySelector('.go-to-bottom').classList.remove('toggle-go-to-bottom');            
-        }        
+    // window.onscroll = function(){
+    //     const doc = document.documentElement.scrollHeight;
+    //     const winHeight = window.innerHeight;        
+    //     if(window.scrollY > winHeight+doc/2-winHeight){
+    //         document.querySelector('.go-to-bottom').classList.add('toggle-go-to-bottom');            
+    //     }else{
+    //         document.querySelector('.go-to-bottom').classList.remove('toggle-go-to-bottom');            
+    //     }        
 
-    }
+    // }
 
     const countries = document.querySelectorAll('#country')
     countries[countries.length-1].setAttribute('id', "last-country");
