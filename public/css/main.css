@@ -46,6 +46,7 @@ div#app-wrapper div#nav-wrapper nav#navbar a.brand-logo {
   div#app-wrapper div#nav-wrapper nav#navbar a.brand-logo {
     font-size: 22px;
     font-weight: 500;
+    margin-left: 10px;
   }
 }
 
@@ -90,6 +91,12 @@ div#app-wrapper div#nav-wrapper nav#navbar div.source-link a {
 
 div#app-wrapper div#nav-wrapper nav#navbar div.source-link a span:first-child {
   margin-right: 10px;
+}
+
+@media (max-width: 760px) {
+  div#app-wrapper div#nav-wrapper nav#navbar div.source-link a {
+    margin-right: 10px;
+  }
 }
 
 div#app-wrapper div#container {

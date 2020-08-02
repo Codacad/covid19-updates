@@ -37,7 +37,8 @@ div#app-wrapper{
             @media (max-width:760px){
                 a.brand-logo{
                     font-size: 22px;
-                    font-weight: 500;                    
+                    font-weight: 500;   
+                    margin-left: 10px;                 
                 }   
             }
             div.source-link{
@@ -69,7 +70,12 @@ div#app-wrapper{
                         margin-right: 10px;
                     }                    
                 }
-            }
+                @media (max-width:760px){
+                    a{
+                        margin-right: 10px;
+                    }   
+                }
+            }            
         }
     }
     div#container{        
