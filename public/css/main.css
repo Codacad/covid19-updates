@@ -215,8 +215,42 @@ div#app-wrapper div#container div.covid19-data div.data div.left div.search-grou
 
 @media (max-width: 760px) {
   div#app-wrapper div#container div.covid19-data div.data div.left div.search-group {
-    margin-top: 30px;
+    margin-top: 50px;
   }
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left .no-country-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left .no-country-found div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left .no-country-found div span {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 25px;
 }
 
 div#app-wrapper div#container div.covid19-data div.data div.left div#country, div#app-wrapper div#container div.covid19-data div.data div.left div#last-country, div#app-wrapper div#container div.covid19-data div.data div.left div#first-country {
@@ -224,8 +258,8 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country, di
   border-radius: 5px;
   position: relative;
   margin-bottom: 15px;
-  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03);
-          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03), 0px 5px 5px rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.03), 0px 0px 5px rgba(0, 0, 0, 0.03), 0px 0px 5px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.03), 0px 0px 5px rgba(0, 0, 0, 0.03), 0px 0px 5px rgba(0, 0, 0, 0.03);
 }
 
 div#app-wrapper div#container div.covid19-data div.data div.left div#country div.pop-popup, div#app-wrapper div#container div.covid19-data div.data div.left div#last-country div.pop-popup, div#app-wrapper div#container div.covid19-data div.data div.left div#first-country div.pop-popup {
@@ -528,6 +562,24 @@ div#app-wrapper div#container div.covid19-data div.data div.left div#country div
   div#app-wrapper div#container div.covid19-data div.data div.left div#country div.main-info, div#app-wrapper div#container div.covid19-data div.data div.left div#last-country div.main-info, div#app-wrapper div#container div.covid19-data div.data div.left div#first-country div.main-info {
     padding: .5em;
   }
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left .search-hide-country {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+div#app-wrapper div#container div.covid19-data div.data div.left .search-show-country {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 div#app-wrapper div#container div.covid19-data div.data div.right {

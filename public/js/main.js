@@ -7,18 +7,30 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('div.search-group').style.transition = "200ms ease-in-out"
     })
 
+    const noCountryFound = document.createElement('div');
+    noCountryFound.className = "no-country-found";
+    noCountryFound.innerHTML = `<div><span>Country isn't available</span><span style='font-size:100px;'>&#128533;</span></div>`
+    document.querySelector('.left').append(noCountryFound);
+    document.querySelector('.no-country-found').style.display = "none";
     document.querySelector('input.search').addEventListener('keyup', function(e){
         const countries = document.querySelectorAll('.country');        
         countries.forEach(country => {
+            if(country.style.display == "block"){
+                
+            }else{
+                
+            }
             const header = country.querySelector('.header');
             const countryIdentity = header.querySelector('.country-identity')
             const countryName = countryIdentity.querySelector('h2.country-name')
             const countryLowerCase = countryName.innerHTML.toLowerCase()
             const serachLowercase = e.target.value.toLowerCase().trim()
             if(countryLowerCase.indexOf(serachLowercase) == -1){
-                country.style.display = "none"
+                country.style.display = "none"                             
+                document.querySelector('.no-country-found').style.display = "block";
             }else{
-                country.style.display = "block"
+                country.style.display = "block"                                
+                document.querySelector('.no-country-found').style.display = "none";
             }
         })
     })
