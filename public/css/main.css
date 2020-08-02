@@ -206,6 +206,12 @@ div#app-wrapper div#container div.covid19-data div.data div.left div.search-grou
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 760px) {
+  div#app-wrapper div#container div.covid19-data div.data div.left div.search-group {
+    margin-top: 30px;
+  }
+}
+
 div#app-wrapper div#container div.covid19-data div.data div.left div#country, div#app-wrapper div#container div.covid19-data div.data div.left div#last-country, div#app-wrapper div#container div.covid19-data div.data div.left div#first-country {
   background-color: #fff;
   border-radius: 5px;
