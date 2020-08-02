@@ -14,12 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.no-country-found').style.display = "none";
     document.querySelector('input.search').addEventListener('keyup', function(e){
         const countries = document.querySelectorAll('.country');        
-        countries.forEach(country => {
-            if(country.style.display == "block"){
-                
-            }else{
-                
-            }
+        countries.forEach(country => {           
             const header = country.querySelector('.header');
             const countryIdentity = header.querySelector('.country-identity')
             const countryName = countryIdentity.querySelector('h2.country-name')
@@ -27,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const serachLowercase = e.target.value.toLowerCase().trim()
             if(countryLowerCase.indexOf(serachLowercase) == -1){
                 country.style.display = "none"                             
-                document.querySelector('.no-country-found').style.display = "block";
+                // document.querySelector('.no-country-found').style.display = "block";
             }else{
                 country.style.display = "block"                                
-                document.querySelector('.no-country-found').style.display = "none";
+                // document.querySelector('.no-country-found').style.display = "block";
             }
         })
     })
