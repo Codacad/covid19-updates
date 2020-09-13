@@ -6,7 +6,7 @@ const countryCords = []
 let allData;
 let mapdataClone = []
 const url = 'https://corona.lmao.ninja/v2/countries';
-fetch('http://localhost:5000/js/countries.json')
+fetch(url)
     .then(res => res.json())
     .then(covidData => {
         covidData.forEach(data => {
@@ -14,7 +14,7 @@ fetch('http://localhost:5000/js/countries.json')
         })       
     })
     .catch(err => console.log(err));        
-    fetch("http://localhost:5000/js/countries.json")
+    fetch(url)
     .then(res => res.json())
     .then(data => {          
            allData = data
